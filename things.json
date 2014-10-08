@@ -1,0 +1,8 @@
+// receive - things.json
+// repository of all officially managed receive things
+//
+// "thingName": "JsonLink"
+
+{
+  "test": "http://joshhartigan.github.io/rcv.json"
+}
