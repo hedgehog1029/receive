@@ -6,6 +6,8 @@ Installs based on basic json files, example at [joshhartigan.github.io/rcv.json]
 
 A repository of all things and their associated URLs can be found [here](http://joshhartigan.github.io/receive/things.json).
 
+![screencast](http://imgur.com/TaKv4rY.gif)
+
 ## License (ISC)
 ```
 Copyright (c) 2014, Josh Hartigan
