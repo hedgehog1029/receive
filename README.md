@@ -1,7 +1,8 @@
 receive
 =======
 
-Not a package manager. A Things Manager.
+Not a package manager. A Things Manager.  
+Installs based on basic json files, example at [joshhartigan.github.io/rcv.json](http://joshhartigan.github.io/rcv.json)
 
 ## License (ISC)
 ```
