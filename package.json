@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "description": "Not a package manager. A Things Manager.",
   "main": "receive.js",
+  "bin": {
+    "receive": "./receive.js"
+  },
   "dependencies": {
+    "colors": "^1.0.2",
+    "commander": "^2.3.0",
     "request": "^2.45.0"
   },
   "repository": {
