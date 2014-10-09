@@ -39,7 +39,7 @@ var receiveThing = function(json) {
       if (!err && response.statusCode == 200) {
         var thingJson = JSON.parse(body);
 
-        rcvLog('Located thing ' + thingJson['name'].bold.red + ':');
+        rcvLog('located thing ' + thingJson['name'].bold.red + ':');
 
         if ( thingJson['description'] ) {
           rcvLog( '"' + thingJson['description'] + '"' );
@@ -51,12 +51,13 @@ var receiveThing = function(json) {
           )
         } else {
           download.get( thingJson['get'], thingJson['file'] )
+          rcvLog( 'got ' + thingJson['get'].green + ' as ' + thingJson['file'].green );
         }
 
       }
     });
 
   } else {
-    rcvLog('Thing ' + thingArg.bold.red + ' not found.');
+    rcvLog('thing ' + thingArg.bold.red + ' not found.');
   }
 };
