@@ -43,7 +43,7 @@ var receiveThing = function(json) {
           rcvLog( '"' + thingJson['description'] + '"' );
         }
 
-        if ( !( thingJson['get'] && !thingJson['file'] ) ) {
+        if ( !( thingJson['get'] && thingJson['file'] ) ) {
           rcvLog(
             'error: '.bold + 'insufficient properties for ' + thingJson['name'].bold.red
           )
