@@ -1,3 +1,5 @@
+#!/usr/local/bin/node
+
 var request = require('request');
 var program = require('commander');
 var colors = require('colors');
@@ -35,7 +37,10 @@ var receiveThing = function(json) {
       if (!err && response.statusCode == 200) {
         var thingJson = JSON.parse(body);
 
-        rcvLog('Located thing ' + thingJson['name'].bold.red);
+        rcvLog('Located thing ' + thingJson['name'].bold.red + ':');
+        if ( thingJson['description'] ) {
+          rcvLog( '"' + thingJson['description'] + '"' );
+        }
       }
     });
 
