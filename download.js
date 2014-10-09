@@ -6,7 +6,7 @@ var get = function(url, dest) {
   var req = http.get(url, function(response) {
     response.pipe(file);
     file.on('finish', function() {
-      file.close(cb);
+      file.close();
     });
   }).on('error', function(error) {
     fs.unlink(dest);
