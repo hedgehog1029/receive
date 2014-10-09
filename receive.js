@@ -38,9 +38,19 @@ var receiveThing = function(json) {
         var thingJson = JSON.parse(body);
 
         rcvLog('Located thing ' + thingJson['name'].bold.red + ':');
+
         if ( thingJson['description'] ) {
           rcvLog( '"' + thingJson['description'] + '"' );
         }
+
+        if ( !( thingJson['get'] && !thingJson['file'] ) ) {
+          rcvLog(
+            'error: '.bold + 'insufficient properties for ' + thingJson['name'].bold.red
+          )
+        } else {
+          download.get( thingJson['get'], thingJson['file'] )
+        }
+
       }
     });
 
