@@ -8,6 +8,14 @@ A repository of all things and their associated URLs can be found [here](http://
 
 ![screencast](http://imgur.com/TaKv4rY.gif)
 
+## Installation
+
+```
+$ git clone https://github.com/joshhartigan/receive
+$ sudo npm install -g receive/
+$ rm -rf receive/ # optional
+```
+
 ## License (ISC)
 ```
 Copyright (c) 2014, Josh Hartigan
