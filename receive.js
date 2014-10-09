@@ -4,8 +4,10 @@ var request = require('request');
 var program = require('commander');
 var colors = require('colors');
 
+var download = require('./download');
+
 var rcvLog = function(msg) {
-  console.log(" > rcv: ".magenta + msg);
+  console.log(' > rcv: '.magenta + msg);
 };
 
 program.version('0.1.0')
