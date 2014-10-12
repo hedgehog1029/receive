@@ -7,9 +7,9 @@
     "receive": "./receive.js"
   },
   "dependencies": {
-    "colors": "^1.0.2",
-    "commander": "^2.3.0",
-    "request": "^2.45.0"
+    "colors": "1.0.2",
+    "commander": "2.3.0",
+    "request": "2.45.0"
   },
   "repository": {
     "type": "git",
