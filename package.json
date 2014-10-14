@@ -4,12 +4,14 @@
   "description": "Not a package manager. A Things Manager.",
   "main": "receive.js",
   "bin": {
-    "receive": "./receive.js"
+    "receive": "./receive.js",
+    "send": "./send.js"
   },
   "dependencies": {
     "colors": "1.0.2",
     "commander": "2.3.0",
-    "request": "2.45.0"
+    "request": "2.45.0",
+    "firebase": "1.1.2"
   },
   "repository": {
     "type": "git",
