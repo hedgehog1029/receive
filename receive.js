@@ -19,7 +19,7 @@ program.version('0.1.0')
 
 var thingsRepo = {};
 
-request.get('http://joshhartigan.github.io/receive/things.json',
+request.get('https://receive-repo.firebaseio.com/.json?print=pretty',
   function(err, response, body) {
     if (!err && response.statusCode == 200) {
       thingsRepo = JSON.parse(body);
