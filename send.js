@@ -14,6 +14,10 @@ program.version('0.1.0')
     .parse(process.argv);
 
 function send(thing, url) {
+    sndLog('package ' + thingArg.green + ' scheduled for adding');
+    sndLog('json file located at ' + urlArg.green);
+    sndLog('checking for existing data');
+    
     base.child(thing).once('value', function(snapshot) {
         if (snapshot.val() == null) {
             sndLog('ok: '.green + 'no existing data');
@@ -37,11 +41,7 @@ var sendThing = function() {
     var thingArg = process.argv[process.argv.length - 2];
     var urlArg = process.argv[process.argv.length - 1];
     
-    sndLog('package ' + thingArg.green + ' scheduled for adding');
-    sndLog('json file located at ' + urlArg.green);
-    sndLog('checking for existing data');
-    
     send(thingArg, urlArg);
 }
 
-sendThing();
+//sendThing();
