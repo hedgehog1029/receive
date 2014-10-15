@@ -5,6 +5,7 @@ var program = require('commander');
 var colors = require('colors');
 
 var download = require('./download');
+var send = require('./send');
 
 var rcvLog = function(msg) {
   console.log(' > rcv: '.magenta + msg);
@@ -15,6 +16,7 @@ program.version('0.1.0')
   .option('-l, --local', 'Install Thing locally')
   .option('-g, --global', 'Install Thing globally')
   .option('-i, --info', 'Get info on Thing without installing')
+  .option('-s, --send', 'Send thing rather than receive it.')
   .parse(process.argv);
 
 var thingsRepo = {};
